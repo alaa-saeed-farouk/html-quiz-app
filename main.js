@@ -35,7 +35,7 @@ async function getQuestions() {
       currentIndex++;
 
       // Check the Answer
-      checkAnswer(theRightAnswer, qCount);
+      checkAnswer(theRightAnswer);
 
       // Remove Previous Question
       quizArea.innerHTML = "";
@@ -124,7 +124,7 @@ function addQuestionData(obj, count) {
     }
   }
 }
-function checkAnswer(rAnswer, count) {
+function checkAnswer(rAnswer) {
   let answers = document.getElementsByName("question");
   let theChosenAnswer;
 

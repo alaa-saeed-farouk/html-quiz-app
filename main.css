@@ -6,9 +6,32 @@ body {
 }
 .quiz-app {
   margin: 20px auto;
-  width: 800px;
   background-color: #f8f8f8;
   padding: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .quiz-app  {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .quiz-app  {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .quiz-app  {
+    width: 1170px;
+  }
+}
+/* Very Large */
+@media (min-width: 1400px) {
+  .quiz-app  {
+    width: 1350px;
+  }
 }
 .quiz-app .quiz-info {
   display: flex;
@@ -29,6 +52,21 @@ body {
 }
 .quiz-app .quiz-area h2 {
   margin: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .quiz-app .quiz-area h2 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .quiz-app .quiz-area h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .quiz-app .quiz-area h2 {
+    font-size: 12px;
+  }
 }
 .quiz-app .answers-area {
   background-color: #fff;
@@ -52,6 +90,16 @@ body {
   margin-left: 5px;
   position: relative;
   top: -1px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .quiz-app .answers-area .answer label {
+    font-size: 11px;
+  }
+}
+@media (max-width: 575px) {
+  .quiz-app .answers-area .answer label{
+    font-size: 9px;
+  }
 }
 .quiz-app .submit-button {
   background-color: #0075ff;
